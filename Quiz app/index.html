@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="nextQuestion()" onloadstart="timerstart">
+    <button onclick="StartQuiz()" class="start">START</button>
+    <div>
+        <p id="timer">2:00</p>
+   
+    
+    
+    <div class="allinone">
+        
+        
+      <b><i><p class="questions" id="ques"></p></i></b> 
+
+              <br>
+    <div class="allOp" id="allOp">
+
+        <ol>      <b><input onclick="clicked()" value="1" name="options" type="radio">
+                <i><label id="opt1" onclick="clicked()" class="option1"></label></i></b> </li>  
+
+                         <br>
+
+             <b><input onclick="clicked()" value="2" name="options" type="radio">
+                <i><label id="opt2" onclick="clicked()" class="option2"></label></label></i></b> </li>
+
+         <br>
+
+          <b><input onclick="clicked()" value="3" name="options" type="radio">
+            <i><label id="opt3" onclick="clicked()" class="option3"></label></i></b> </li>
+            </ol>      
+    </div>            
+                  <br>
+
+         <button id="btn" disabled onclick="nextQuestion()">next</button>
+         <button onclick="resetQuiz()" id="reset">Restart</button>
+        
+      </div>
+       </div>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+     <script src="app.js"></script>
+</body>
+</html>
